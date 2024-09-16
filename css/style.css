@@ -1,0 +1,115 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--Body);
+}
+
+html , body {
+    scroll-behavior: smooth;
+}
+
+html {
+    --Pink: hsl(322, 100%, 66%);
+    --PinkL: hsla(322, 100%, 66%,0.5);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Heading: "Poppins", sans-serif;
+    --Body: "Open Sans", sans-serif;
+}
+
+.homeSection {
+    width: 100%;
+    height: 100vh;
+    color: var(--Very-Dark-Cyan);
+}
+
+.homeLayer {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-size: 100% 100%;
+    background-color: var(--Very-Pale-Cyan);
+}
+
+.homeSection nav {
+    width: 100%;
+    height: 150px;
+    padding: 0px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeSection nav button {
+    padding: 12px 60px;
+    background-color: white;
+    border-radius: 25px;
+    border: 0px;
+    box-shadow: 0px 0px 7px -2px var(--Grayish-Blue);
+    font-family: var(--Heading);
+    font-weight: 700;
+    color: var(--Very-Dark-Cyan);
+}
+
+.homeSection nav button:hover {
+    cursor: pointer;
+    color: var(--Grayish-Blue);
+}
+
+.homeSection .homeContent {
+    padding: 0px 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeSection .homeContent .leftContent {
+    width: 50%;
+    height: calc(100vh - 360px );
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.homeSection .homeContent .leftContent h1 {
+    width: 80%;
+    font-size: 2.5pc;
+    font-weight: 600;
+    font-family: var(--Heading);
+}
+
+.homeSection .homeContent .leftContent p {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.homeSection .homeContent .leftContent button {
+    width: 40%;
+    padding: 17px 0px;
+    border-radius: 25px;
+    border: 0px;
+    color: white;
+    font-family: var(--Heading);
+    font-weight: 700;
+    background-color: var(--Pink);
+}
+
+.homeSection .homeContent .leftContent button:hover {
+    cursor: pointer;
+    background-color: var(--PinkL);
+}
+
+.homeSection .homeContent .rightContent {
+    width: 50%;
+    height: calc(100vh - 270px );
+}
+
+.homeSection .homeContent .rightContent img {
+    width: 100% ;
+    height: 100%;
+}
+
