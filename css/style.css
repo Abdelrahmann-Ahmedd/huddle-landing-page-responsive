@@ -158,7 +158,8 @@ h2 {
 
 .contentsSection .content-2 {
     width: 60%;
-    height: calc(100vh /4);
+    background-color: white;
+    height: calc(110vh /4);
     padding: 0px 10%;
     align-self: center;
     display: flex;
@@ -167,10 +168,105 @@ h2 {
     align-items: center;
     border-radius: 15px;
     box-shadow: 0px 0px 10px -5px var(--Very-Dark-Cyan);
+    position: relative;
+    transform: translateY(40%);
 }
 
 .contentsSection .content-2 button {
     width: 80%;
 }
+
+footer {
+    width: 100%;
+    padding: 10% 15% 2%;
+    color: var(--Very-Pale-Cyan);
+    background-color: var(--Very-Dark-Cyan);
+}
+
+footer .footerDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer figure {
+    width: 15%;
+    filter: grayscale(1) ;
+    filter: invert(1);
+}
+
+footer figure img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .footerDetails .contact {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footerDetails .contact div {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+footer .footerDetails .contact img {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+footer .footerDetails .links {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .footerDetails .links a {
+    text-decoration: none;
+    color: var(--Very-Pale-Cyan);
+    width: 23%;
+    height: calc(100% / 3);
+    display: flex;
+    align-items: center;
+}
+
+footer .footerDetails .links a:hover {
+    text-decoration: underline;
+}
+
+footer .footerDetails .icons {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerDetails .icons i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Very-Pale-Cyan);
+    border-radius: 50%;
+}
+
+footer .footerDetails .icons i:hover {
+    color: var(--Pink);
+    cursor: pointer;
+    border-color: var(--Pink);
+}
+
+
+
+
+
 
 
